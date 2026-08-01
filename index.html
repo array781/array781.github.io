@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Global CSS Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Navigation Bar Styles */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Layout Styles */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        /* Interactive Component Styles */
+        .interactive-box {
+            background-color: #e8f4fd;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <h2>About This Page</h2>
+        <p>This is a standard template for a simple, responsive website. It includes structured structural elements (HTML), stylistic presentation rules (CSS), and logic routines (JavaScript) combined seamlessly inside a single file.</p>
+        
+        <h2>Key Page Features</h2>
+        <ul>
+            <li><strong>Responsive Layout:</strong> Flexibly adapts across desktop layouts down to small mobile viewing screens.</li>
+            <li><strong>Embedded Typography:</strong> Styled using standard, clean, and highly readable sans-serif system fonts.</li>
+            <li><strong>Functional Scripts:</strong> Features client-side element controls tied directly to custom browser actions.</li>
+        </ul>
+
+        <!-- Interactive JavaScript Component Section -->
+        <div class="interactive-box">
+            <h3>Try the Live Interaction</h3>
+            <p id="interactive-text">Click the button below to alter this structural paragraph content via JavaScript execution routines.</p>
+            <button onclick="changeContent()">Trigger Update</button>
+        </div>
+    </div>
+
+    <!-- Page Footer -->
+    <footer>
+        <p>&copy; 2026 Sample Webpage Template. Built for instructional reference.</p>
+    </footer>
+
+    <!-- Core JavaScript Logic -->
+    <script>
+        function changeContent() {
+            // Selects the target element and modifies its HTML value text dynamically
+            const targetElement = document.getElementById("interactive-text");
+            targetElement.innerHTML = "<strong>Success!</strong> The dynamic text update string was injected via the browser's Document Object Model (DOM).";
+            targetElement.style.color = "#27ae60";
+        }
+    </script>
+
+</body>
+</html>
