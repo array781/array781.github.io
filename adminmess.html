@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message from Admin</title>
+  <title>Website Under Development</title>
 
   <style>
     * {
@@ -21,90 +21,93 @@
       background: #f1f5f9;
     }
 
-    .admin-message {
+    .message-card {
       width: 100%;
       max-width: 500px;
-      padding: 30px;
+      padding: 35px 25px;
       background: white;
-      border-radius: 15px;
-      border-top: 5px solid #2563eb;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
       text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border-top: 5px solid #2563eb;
     }
 
-    .admin-icon {
-      font-size: 45px;
-      margin-bottom: 10px;
+    .icon {
+      font-size: 55px;
+      margin-bottom: 15px;
     }
 
     h1 {
-      color: #2563eb;
+      color: #1e40af;
       font-size: 27px;
-      margin: 10px 0;
+      margin-bottom: 10px;
     }
 
     .subtitle {
       color: #64748b;
       font-size: 14px;
-    }
-
-    .message {
-      margin: 25px 0;
-      padding: 18px;
-      background: #eff6ff;
-      border-radius: 10px;
-      color: #334155;
-      font-size: 16px;
-      line-height: 1.7;
-      text-align: left;
-    }
-
-    .posted-by {
-      color: #64748b;
-      font-size: 13px;
       margin-bottom: 25px;
     }
 
-    .home-button {
+    .message {
+      color: #334155;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .admin {
+      color: #64748b;
+      font-size: 13px;
+      margin-bottom: 28px;
+    }
+
+    .home-btn {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 13px 25px;
       background: #2563eb;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 15px;
       font-weight: bold;
-      transition: background 0.2s;
+      transition: 0.3s;
     }
 
-    .home-button:hover {
+    .home-btn:hover {
       background: #1d4ed8;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 
 <body>
 
-  <main class="admin-message">
-    <div class="admin-icon">📢</div>
+  <div class="message-card">
+    <div class="icon">🚧</div>
 
-    <h1>Message from Admin</h1>
-    <div class="subtitle">Official Announcement</div>
+    <h1>Website Under Development</h1>
+
+    <div class="subtitle">A Message from the Administrator</div>
 
     <div class="message">
-      Welcome to our website! Please stay updated
-      for important announcements and information.
-      Thank you for visiting our page!
+      Our website is currently under development.
+      We are working hard to improve the site and
+      bring you a better experience.
+
+      <br><br>
+
+      Thank you for your patience and understanding.
+      Please check back soon for updates!
     </div>
 
-    <div class="posted-by">
-      Posted by the Administrator
+    <div class="admin">
+      — The Administration Team
     </div>
 
-    <a href="index.html" class="home-button">
+    <a href="index.html" class="home-btn">
       ← Back to Home
     </a>
-  </main>
+  </div>
 
 </body>
 </html>
