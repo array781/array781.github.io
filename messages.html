@@ -3,59 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Message</title>
+  <title>Message from Admin</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
       margin: 0;
-      padding: 30px 15px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
     }
 
     .admin-message {
+      width: 100%;
       max-width: 500px;
-      margin: 30px auto;
-      padding: 20px;
+      padding: 30px;
       background: white;
-      border-left: 5px solid #2563eb;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      border-top: 5px solid #2563eb;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
-    .admin-message h2 {
-      margin-top: 0;
+    .admin-icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
       color: #2563eb;
-      font-size: 22px;
+      font-size: 27px;
+      margin: 10px 0;
     }
 
-    .admin-message p {
-      color: #333;
-      line-height: 1.6;
+    .subtitle {
+      color: #64748b;
+      font-size: 14px;
     }
 
-    .admin-label {
-      color: #666;
+    .message {
+      margin: 25px 0;
+      padding: 18px;
+      background: #eff6ff;
+      border-radius: 10px;
+      color: #334155;
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .posted-by {
+      color: #64748b;
       font-size: 13px;
-      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .home-button:hover {
+      background: #1d4ed8;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="admin-message">
-    <h2>📢 Message from Admin</h2>
+  <main class="admin-message">
+    <div class="admin-icon">📢</div>
 
-    <p>
+    <h1>Message from Admin</h1>
+    <div class="subtitle">Official Announcement</div>
+
+    <div class="message">
       Welcome to our website! Please stay updated
       for important announcements and information.
-    </p>
+      Thank you for visiting our page!
+    </div>
 
-    <div class="admin-label">
+    <div class="posted-by">
       Posted by the Administrator
     </div>
-  </div>
+
+    <a href="index.html" class="home-button">
+      ← Back to Home
+    </a>
+  </main>
 
 </body>
 </html>
